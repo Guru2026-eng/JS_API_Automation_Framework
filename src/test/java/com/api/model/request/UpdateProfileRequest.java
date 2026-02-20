@@ -1,13 +1,13 @@
 package com.api.model.request;
 
-public class UpdateProfileRequest {
+public class UpdateProfileRequest   {
 	
 	String firstName;
 	String lastName;
 	String email;
 	String mobileNumber;
 	
-	public UpdateProfileRequest(String firstName, String lastName, String email, String mobileNumber) {
+	private UpdateProfileRequest(String firstName, String lastName, String email, String mobileNumber) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;

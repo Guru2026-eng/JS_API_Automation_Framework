@@ -1,5 +1,6 @@
 package com.api.test;
 
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.api.base.AuthService;
@@ -8,6 +9,8 @@ import com.api.model.response.LoginResponse;
 
 import io.restassured.response.Response;
 
+
+@Listeners(com.api.listners.TestListners.class)
 public class LoginAPITest {
 	
 	@Test(description ="Check login API is working....")
