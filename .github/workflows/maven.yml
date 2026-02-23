@@ -39,9 +39,9 @@ jobs:
 
     - name: Publish Test Report
       if: always()
-      uses: turing85/publish-report@v2.3.0
+      uses: dorny/test-reporter@v1
       with:
         name: TestNG Results
-        path: /APIAutomationFramework/test-output/junitreports/TEST-*.xml
+        path: target/surefire-reports/junitreports/TEST-*.xml
         reporter: java-junit
       
